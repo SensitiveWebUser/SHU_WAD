@@ -1,13 +1,40 @@
 /* CSS Document */
 .container {
   max-width: 1366px;
-  /* 1366x768	16:9*/
   margin: auto;
 }
+
+.logo {
+  padding: 5px 0px;
+  flex-basis: 85%;
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.loginLinks {
+  flex-basis: 15%;
+}
+
+.search {
+  padding: 5px 0;
+  flex-basis: 40%;
+}
+
 .burgerMenu,
 .mobH1 {
   display: none;
 }
+
+header {
+  justify-content: flex-end;
+  padding: 0 0 0 5px;
+}
+
 header,
 .mainContent,
 .row {
@@ -28,6 +55,7 @@ header nav ul li h1 {
   height: 200px;
 }
 .mainNav {
+  display: block;
   padding: 8px 0;
   height: auto;
 }
@@ -65,4 +93,15 @@ main {
 .straplineImg {
   padding: 0 5px;
   flex-basis: 50%;
+}
+
+.straplinetxt > img {
+  width: 100%;
+}
+
+@media (min-width: 721px) and (max-width: 1122px) {
+  /* ipad specific rules here */
+  h1 {
+    color: #f00;
+  }
 }
